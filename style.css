@@ -1,0 +1,114 @@
+body{
+margin: 0;
+padding: 0;
+height: 100vh;
+width: 100vw;
+background-color: rgb(42, 165, 144);
+}
+header{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/*------Formatação do Container--------*/
+ .container {
+
+    height:560px;
+    width: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+    
+ }
+/*---- Formatação da Barra de Navegação----*/
+ .navegacao{
+
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+ }
+
+ /*----Formatação dos Indicadores da Navegação----*/
+
+ .bar{
+
+background-color: aquamarine;
+width: 30px;
+height: 5px;
+margin: 6px;
+transition: 3s;
+
+
+
+ }
+ .bar:hover{
+
+background-color: blue;
+
+
+ }
+
+ /*-----ocultar as input radio------*/
+ input{
+    display: none;
+ }
+
+ /*-----formatacao do tamanho da classe imagens-----*/
+
+ .imagens{
+
+display: flex;
+height: 100%;
+width: 600%;
+
+ }
+
+ .imagem{
+    width: 16.6666666667%;
+    transition: .4s;
+}
+/*-----ajuste do tamanho da imagem---*/
+
+.imagem img{
+
+width: 100%;
+height: 100%;
+} 
+
+/*-----transiçao de imagem----*/
+ 
+#imagem1:checked ~.img1{
+    margin-left: 0;
+
+}
+
+#imagem2:checked ~.img1{
+    margin-left: -16.6666666667%;
+
+}
+
+#imagem3:checked ~.img1{
+    margin-left: -33.3333333334%;
+
+}
+
+#imagem4:checked ~.img1{
+    margin-left: -50%;
+
+}
+#imagem5:checked ~.img1{
+    margin-left: -66.6666666667%;
+
+}
+
+#imagem6:checked ~.img1{
+    margin-left: -83.333333333%;
+
+}
+
+ 
